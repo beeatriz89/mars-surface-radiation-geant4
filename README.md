@@ -8,19 +8,18 @@ The project focuses on the simulation and dosimetric assessment of radiation exp
 
 ## Contents
 
-* **Geant4** — Monte Carlo simulation code for radiation transport through the Martian atmosphere and computational phantoms.
+* **Geant4** — Monte Carlo simulation code for radiation transport through the Martian environment and computational phantoms.
 * **Python** — Scripts developed for processing simulation outputs and performing dosimetric calculations.
 
-## Methodological references
+## References and acknowledgements
 
-The implementation of the Martian radiation environment, particle flux simulations, and dosimetric calculations was developed based on methods and approaches described in the following works:
+The implementation of the Martian radiation environment and particle flux calculations was based on the methods described by Matthiä et al. (2017):
 
-* Matthiä, D. et al. (2017). *[Full reference to be added]*.
-* Berger, T. et al. (2017). *[Full reference to be added]*.
+> Matthiä, D. et al. (2017). *[Full reference]*.
 
-The computational phantom implementation was based on the `advanced/ICRP145HumanPhantom` example provided with the Geant4 distribution. This example was developed by Haegin Han and contributors and is distributed as part of the Geant4 examples.
+The computational phantom implementation was based on the `advanced/ICRP145HumanPhantom` example provided with the Geant4 distribution (Agostinelli et al., 2003), developed by Haegin Han and contributors.
 
-The present repository contains the adaptations and additional code developed for the specific purposes of the thesis.
+The code in this repository includes adaptations and additional implementations developed for the purposes of the present thesis.
 
 ## Software
 
@@ -36,6 +35,8 @@ Faculty of Sciences, University of Porto
 2026
 
 ## License
+
+This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
 
 This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
 
