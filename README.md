@@ -53,3 +53,8 @@ Faculty of Sciences, University of Porto
 ## License
 
 This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
+
+
+### Use of Generative AI
+
+Generative AI tools, namely Claude (Claude Sonnet 4 and Claude Sonnet 5) and ChatGPT, were used between November 2025 and August 2026 to support the development, revision, debugging, and problem-solving of the simulation codes in this repository. The author retains full responsibility for the design, implementation, validation, execution, and interpretation of the simulations, as well as for the final content of the work.
