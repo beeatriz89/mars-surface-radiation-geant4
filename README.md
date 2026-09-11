@@ -4,6 +4,8 @@ This repository contains the source code developed for the MSc thesis:
 
 **Effective dose estimation on Mars and the Moon using simulations and radiobiological modeling**
 
+[![DOI](https://zenodo.org/badge/1365135365.svg)](https://doi.org/10.5281/zenodo.22700705)
+
 The project focuses on the simulation and dosimetric assessment of radiation exposure at the Martian surface using Monte Carlo methods and the Geant4 toolkit.
 
 ## Contents
