@@ -1,0 +1,15 @@
+# init_vis.mac - opcional, só usado em modo interativo (sem argumento de macro)
+/vis/open OGL 600x600-0+0
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi 90 0
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/create/drawByCharge
+/vis/scene/endOfEventAction accumulate 100
+/vis/viewer/set/autoRefresh true
+
+/run/numberOfThreads 8
+/run/initialize
+/source/particle gamma
+/source/energy 1.0 MeV

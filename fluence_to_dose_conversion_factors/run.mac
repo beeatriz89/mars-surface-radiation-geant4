@@ -1,0 +1,15 @@
+# run.mac
+# Exemplo: fatores de conversao D/Phi e H/Phi (via Q(L), ICRP60/ICRP123)
+# para um feixe plano de fotoes de 1 MeV incidente numa placa de tecido (AP)
+
+/run/numberOfThreads 8
+/run/initialize
+
+# --- Configuracao da fonte ---
+/source/particle gamma
+/source/energy 1.0 MeV
+
+# Para ioes (ex: alfa a 100 MeV/nucleon):
+# /source/ion 2 4 100.0
+
+/run/beamOn 1000000

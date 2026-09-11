@@ -1,0 +1,57 @@
+# ============================================================
+# Geant4 / CMake build files
+# ============================================================
+
+build/
+Build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+install_manifest.txt
+
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.exe
+
+*.d
+*.pdb
+
+compiler_depend.make
+compiler_depend.internal
+compiler_depend.ts
+depend.make
+DependInfo.cmake
+flags.make
+link.txt
+
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ============================================================
+# Simulation outputs / results
+# ============================================================
+
+*.out
+*.root
+
+# ============================================================
+# Temporary files
+# ============================================================
+
+*.tmp
+*.log
+*.bak
+.DS_Store
+Thumbs.db
