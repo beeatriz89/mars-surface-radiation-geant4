@@ -38,5 +38,31 @@ Faculty of Sciences, University of Porto
 
 This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
 
+## References and acknowledgements
+
+The implementation of the Martian radiation environment and particle flux calculations was based on the methods described by Matthiä and Berger (2017) [1].
+
+The computational phantom implementation was based on the `advanced/ICRP145HumanPhantom` example provided with the Geant4 distribution. The reference computational phantoms are described in ICRP Publication 145 [2]. The `POLY2TET` software used in the preparation of the tetrahedral phantom geometry was developed by Han et al. (2020) [3].
+
+The Geant4 toolkit is described by Agostinelli et al. (2003) [4].
+
+The code in this repository contains adaptations and additional implementations developed for the purposes of the present thesis.
+
+### References
+
+[1] D. Matthiä and T. Berger, *The radiation environment on the surface of Mars – Numerical calculations of the galactic component with GEANT4 / PLANETOCOSMICS*, Life Sciences in Space Research, 14, 57–63 (2017).
+https://doi.org/10.1016/j.lssr.2017.03.005
+
+[2] ICRP, *Adult Mesh-Type Reference Computational Phantoms*, ICRP Publication 145, 2020.
+https://doi.org/10.1177/0146645320913787
+
+[3] H. Han, Y. S. Yeom, C. Choi, S. Moon, B. Shin, S. Ha, and C. H. Kim, *POLY2TET: A computer program for conversion of computational human phantoms from polygonal mesh to tetrahedral mesh*, Journal of Radiological Protection, 40(4), 962–979 (2020).
+https://doi.org/10.1088/1361-6498/abb360
+
+[4] S. Agostinelli et al., *Geant4—a simulation toolkit*, Nuclear Instruments and Methods in Physics Research Section A, 506(3), 250–303 (2003).
+https://doi.org/10.1016/S0168-9002(03)01368-8
+
+The corresponding BibTeX entries are provided in [`references.bib`](references.bib).
+
 This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
 
