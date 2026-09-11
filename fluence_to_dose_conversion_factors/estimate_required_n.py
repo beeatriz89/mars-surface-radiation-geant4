@@ -24,11 +24,11 @@ from beam_config_list import ENERGIES_MEV, PARTICLES
 PILOT_CSV = "pilot_results.csv"
 OUTPUT_DIR = "macros_production"
 PRODUCTION_CSV = "conversion_factors.csv"
-N_THREADS = 8
+N_THREADS = 16
 
-TARGET_REL_UNCERT_PCT = 1.0
+TARGET_REL_UNCERT_PCT = 2.0
 MIN_N = 20000
-MAX_N = 50_000_000
+MAX_N = 150_000_000
 
 
 def load_pilot_results():
@@ -59,7 +59,7 @@ def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     warnings = []
 
-    for fname, gun_cmd, is_ion, g4name in PARTICLES:
+    for fname, gun_cmd, is_ion, g4name, A in PARTICLES:
         lines = [
             f"# Macro de PRODUCAO para {fname} (N calibrado a partir do piloto,",
             f"# alvo de incerteza = {TARGET_REL_UNCERT_PCT}%)",
@@ -74,7 +74,12 @@ def main():
             lines.append(gun_cmd)
 
         for e in ENERGIES_MEV:
-            key = (g4name, round(float(e), 6))
+            if is_ion:
+               energy_lookup = A * e      # energia total escrita no CSV
+            else:
+               energy_lookup = e
+
+            key = (g4name, round(float(energy_lookup), 6))
             entry = pilot.get(key)
 
             if entry is None:

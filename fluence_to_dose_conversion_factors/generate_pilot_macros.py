@@ -20,7 +20,7 @@ import os
 from beam_config_list import ENERGIES_MEV, PARTICLES
 
 N_PILOT = 20000       # primarios por ponto no piloto (so para estimar sigma)
-N_THREADS = 8
+N_THREADS = 16
 OUTPUT_DIR = "macros_pilot"
 PILOT_CSV = "pilot_results.csv"
 
@@ -28,13 +28,14 @@ PILOT_CSV = "pilot_results.csv"
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    for fname, gun_cmd, is_ion, _g4name in PARTICLES:
+    for fname, gun_cmd, is_ion, _g4name, A in PARTICLES:
         lines = [
             f"# Macro PILOTO para {fname} (N={N_PILOT} por energia, so para estimar incerteza)",
             f"/run/numberOfThreads {N_THREADS}",
             "/run/initialize",
             "",
             f"/output/csvFile {PILOT_CSV}",
+            f"/output/primaryOnly true",
             "",
         ]
 
