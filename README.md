@@ -13,33 +13,6 @@ The project focuses on the simulation and dosimetric assessment of radiation exp
 
 ## References and acknowledgements
 
-The implementation of the Martian radiation environment and particle flux calculations was based on the methods described by Matthiä et al. (2017):
-
-> Matthiä, D. et al. (2017). *[Full reference]*.
-
-The computational phantom implementation was based on the `advanced/ICRP145HumanPhantom` example provided with the Geant4 distribution (Agostinelli et al., 2003), developed by Haegin Han and contributors.
-
-The code in this repository includes adaptations and additional implementations developed for the purposes of the present thesis.
-
-## Software
-
-* Geant4
-* Python
-
-## Author
-
-**Maria Beatriz Costa**
-
-MSc in Medical Physics
-Faculty of Sciences, University of Porto
-2026
-
-## License
-
-This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
-
-## References and acknowledgements
-
 The implementation of the Martian radiation environment and particle flux calculations was based on the methods described by Matthiä and Berger (2017) [1].
 
 The computational phantom implementation was based on the `advanced/ICRP145HumanPhantom` example provided with the Geant4 distribution. The reference computational phantoms are described in ICRP Publication 145 [2]. The `POLY2TET` software used in the preparation of the tetrahedral phantom geometry was developed by Han et al. (2020) [3].
@@ -64,5 +37,19 @@ https://doi.org/10.1016/S0168-9002(03)01368-8
 
 The corresponding BibTeX entries are provided in [`references.bib`](references.bib).
 
-This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
+## Software
 
+* Geant4
+* Python
+
+## Author
+
+**Maria Beatriz Costa**
+
+MSc in Medical Physics
+Faculty of Sciences, University of Porto
+2026
+
+## License
+
+This project is licensed under the Apache License 2.0. See the `LICENSE` file for details.
