@@ -2,14 +2,14 @@
 
 This repository contains the source code developed for the MSc thesis:
 
-**Effective Dose Estimation on Mars using Monte Carlo Simulations and Radiobiological Modeling**
+**Effective dose estimation on Mars and the Moon using simulations and radiobiological modeling**
 
 The project focuses on the simulation and dosimetric assessment of radiation exposure at the Martian surface using Monte Carlo methods and the Geant4 toolkit.
 
 ## Contents
 
 * **Geant4** — Monte Carlo simulation code for radiation transport through the Martian environment and computational phantoms.
-* **Python** — Scripts developed for processing simulation outputs and performing dosimetric calculations.
+* **Python** — Scripts developed to automate the Monte Carlo simulations.
 
 ## References and acknowledgements
 
